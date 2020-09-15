@@ -1,4 +1,5 @@
-package com.weather;
+package weather;
+
 
 import static java.lang.Math.random;
 
@@ -15,8 +16,7 @@ public class WeatherProvider {
     }
 
     public String getCurrentWeather(Coordinates coordinates) {
-
-        return weather[(int) (random() * 5) - 1];
+        return weather[(int) ((random() *( coordinates.getHeight() + coordinates.getLongitude() + coordinates.getLatitude()) ) % 4)];
     }
     
 }

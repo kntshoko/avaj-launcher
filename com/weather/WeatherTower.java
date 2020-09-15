@@ -1,4 +1,5 @@
-package com.weather;
+package weather;
+
 
 public class WeatherTower extends Tower {
 

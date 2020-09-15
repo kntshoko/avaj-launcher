@@ -1,9 +1,12 @@
-package com.weather;
+package weather;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.flyable.Flyable;
+import flyables.Flyable;
+
+
 
 public class Tower {
 
