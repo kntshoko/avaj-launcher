@@ -1,2 +1,2 @@
-javac -d . com\**\*.java
-java com.weather.Simulators.txt@$
+javac -d . .\com\flyables\*.java .\com\weather\*.java
+java -cp . weather.Simulator $@
