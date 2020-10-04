@@ -17,19 +17,21 @@ public class Helicopter extends Aircraft implements Flyable {
     {
         String weather = weatherTower.getWeather(this.coordinates);
 
-        if (weather.equals("SUN"))
+        if (weather.equals("SUN")){
             this.coordinates = new Coordinates(
                     coordinates.getLongitude() + 10,
                     coordinates.getLatitude() + 0,
                     coordinates.getHeight() + 2
             );
+            Simulator.writer.println("Helicopter#" + this.name + "(" + this.id + "): " + " This is hot.");
+        }
         else if (weather.equals("RAIN"))
            { this.coordinates = new Coordinates(
                     coordinates.getLongitude() + 5,
                     coordinates.getLatitude() + 0,
                     coordinates.getHeight() + 0
             );
-            Simulator.writer.println("Helicopter#" + this.name + "(" + this.id + "): " + "hotty");
+            Simulator.writer.println("Helicopter#" + this.name + "(" + this.id + "): " + "  It's raining. Better watch out for lightings.");
         }
         else if (weather.equals("FOG"))
             {this.coordinates = new Coordinates(
@@ -37,7 +39,7 @@ public class Helicopter extends Aircraft implements Flyable {
                     coordinates.getLatitude() + 0,
                     coordinates.getHeight() + 0
             ); 
-            Simulator.writer.println("Helicopter#" + this.name + "(" + this.id + "): " + "forggy");
+            Simulator.writer.println("Helicopter#" + this.name + "(" + this.id + "): " + "  Mr forggy I can't sea");
         }
         else if (weather.equals("SNOW"))
            { this.coordinates = new Coordinates(
@@ -45,7 +47,7 @@ public class Helicopter extends Aircraft implements Flyable {
                     coordinates.getLatitude() + 0,
                     coordinates.getHeight() - 12
             );
-            Simulator.writer.println("Helicopter#" + this.name + "(" + this.id + "): " + "snowy");
+            Simulator.writer.println("Helicopter#" + this.name + "(" + this.id + "): " + "  My rotor is going to freeze!");
         }
        
         if (this.coordinates.getHeight() == 0)

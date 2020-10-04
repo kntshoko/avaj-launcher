@@ -23,7 +23,7 @@ public class Baloon  extends Aircraft implements Flyable  {
                     coordinates.getHeight() + 4
             );
             
-        Simulator.writer.println("Baloon#" + this.name + "(" + this.id + "): " + "hotty");
+        Simulator.writer.println("Baloon#" + this.name + "(" + this.id + "): " + "   Let's enjoy the good weather and take some pics.");
         }
            
         else if (weather.equals("RAIN")){
@@ -33,7 +33,7 @@ public class Baloon  extends Aircraft implements Flyable  {
                     coordinates.getHeight() - 5
             );
             
-        Simulator.writer.println("Baloon#" + this.name + "(" + this.id + "): " + "rainny");
+        Simulator.writer.println("Baloon#" + this.name + "(" + this.id + "): " + "  Damn you rain! You messed up my baloon.");
         }
             
         else if (weather.equals("FOG")){
@@ -43,7 +43,7 @@ public class Baloon  extends Aircraft implements Flyable  {
                     coordinates.getHeight() - 3
             );
             
-        Simulator.writer.println("Baloon#" + this.name + "(" + this.id + "): " + "foggy");
+        Simulator.writer.println("Baloon#" + this.name + "(" + this.id + "): " + "  Mr forggy I can't sea");
         }
             
         else if (weather.equals("SNOW")){
@@ -52,7 +52,7 @@ public class Baloon  extends Aircraft implements Flyable  {
                     coordinates.getLatitude() + 0,
                     coordinates.getHeight() - 15
             );
-            Simulator.writer.println("Baloon#" + this.name + "(" + this.id + "): " + "sonwy");
+            Simulator.writer.println("Baloon#" + this.name + "(" + this.id + "): " + "   It's snowing. We're gonna crash.");
         }
            
         if (this.coordinates.getHeight() == 0)
@@ -69,5 +69,4 @@ public class Baloon  extends Aircraft implements Flyable  {
         this.weatherTower.register(this);
         Simulator.writer.println("Tower says: Baloon#" + this.name + "(" + this.id + ")" + " registered to weather tower.");
     }
-
 }

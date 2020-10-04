@@ -24,7 +24,7 @@ public class JetPlane extends Aircraft implements Flyable {
                     coordinates.getLatitude() + 10,
                     coordinates.getHeight() + 2
             );
-            Simulator.writer.println("JetPlane#" + this.name + "(" + this.id + "): " + "hotty");
+            Simulator.writer.println("JetPlane#" + this.name + "(" + this.id + "): " + " hotty");
         }   
         else if (weather.equals("RAIN")){
              this.coordinates = new Coordinates(
@@ -32,7 +32,7 @@ public class JetPlane extends Aircraft implements Flyable {
                     coordinates.getLatitude() + 5,
                     coordinates.getHeight() + 0
             );
-            Simulator.writer.println("JetPlane#" + this.name + "(" + this.id + "): " + "rainy");
+            Simulator.writer.println("JetPlane#" + this.name + "(" + this.id + "): " + " It's raining. Better watch out for lightings.");
         }  
         else if (weather.equals("FOG")){
             this.coordinates = new Coordinates(
@@ -40,7 +40,7 @@ public class JetPlane extends Aircraft implements Flyable {
                     coordinates.getLatitude() + 1,
                     coordinates.getHeight() + 0
             );
-            Simulator.writer.println("JetPlane#" + this.name + "(" + this.id + "): " + "forggy");
+            Simulator.writer.println("JetPlane#" + this.name + "(" + this.id + "): " + "  Mr forggy I can't sea");
         }   
         else if (weather.equals("SNOW")){
              this.coordinates = new Coordinates(
@@ -48,7 +48,7 @@ public class JetPlane extends Aircraft implements Flyable {
                     coordinates.getLatitude() + 0,
                     coordinates.getHeight() - 7
             );
-            Simulator.writer.println("JetPlane#" + this.name + "(" + this.id + "): " + "snowy");
+            Simulator.writer.println("JetPlane#" + this.name + "(" + this.id + "): " + "  OMG! Winter is coming!");
         }
            
         
